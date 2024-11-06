@@ -31,7 +31,7 @@ export default function Menu() {
                 text: 'Por favor espera mientras se autentica con Google.',
                 icon: 'info',
                 allowOutsideClick: false,  // Impide cerrar el alerta mientras se espera
-                showConfirmButton: false,  // No muestra botón de confirmación
+                showConfirmButton: true,  // No muestra botón de confirmación
                 willOpen: () => {
                     Swal.showLoading();  // Muestra el icono de carga
                 },
