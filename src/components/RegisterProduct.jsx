@@ -1,7 +1,9 @@
 import { addDoc, collection } from 'firebase/firestore';
 import React from 'react'
 import { useForm } from 'react-hook-form'
-import db from '../firebase/appConfig';
+import firebaseServices from '../firebase/appConfig';
+
+const { db, auth, signInWithGoogle, logout } = firebaseServices;
 import { useNavigate } from 'react-router-dom';
 import '../index.css';
 export default function RegisterProduct() {
